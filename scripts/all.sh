@@ -100,7 +100,7 @@ run_dump_bootloader()
     local cmd
     local need_spaces
 
-    cmd="../bin/update mread store bootloader normal 0x200000 bootloader.bin"
+    cmd="../bin/update mread store bootloader normal 0x400000 bootloader.bin"
     need_spaces=0
     if [[ "$1" == "bulkcmd" ]] || [[ "$1" == "tplcmd" ]]; then
        need_spaces=1
